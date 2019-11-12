@@ -22,6 +22,7 @@ function processFirstItem(stringList, callback) {
 
 
 // 👇 COMPLETE YOUR WORK BELOW 👇
+
 // 👇 COMPLETE YOUR WORK BELOW 👇
 // 👇 COMPLETE YOUR WORK BELOW 👇
 
