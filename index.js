@@ -46,11 +46,11 @@ function processFirstItem(stringList, callback) {
  * [1] Invoking `processLength` passing `['foo', 'bar']` and `(num) => num + 1000`,
  * should return 1002.
  * 
- * [2] Invoking `processLength` passing `[]` and `(num) => "There are " + num`,
+ * [2] Invoking `processLength` passing`[]` and `(num) => "There are " + num`,
  * should return "There are 0".
 */
-function processLength(/* CODE HERE */) {
-  /* CODE HERE */
+function processLength(list, callback) {
+ return callback(list.length);
 }
 
 /**
@@ -67,8 +67,8 @@ function processLength(/* CODE HERE */) {
  * Invoking `processLastItem` passing `['foo', 'bar']` and `(str) => str + str`,
  * should return 'barbar'.
 */
-function processLastItem(/* CODE HERE */) {
-  /* CODE HERE */
+function processLastItem(stringList, callback) {
+  return callback(stringList[stringList.Length-1]);
 }
 
 /**
@@ -207,8 +207,8 @@ function firstNamesAllCaps(/* CODE HERE */) {
  * a specific t-shirt size, so they can place the orders easily.
  * Implement this function using filter().
  * 
- * @param runners array of runners like the one inside the /data/runners.js file.
- * @param tShirtSize string (possible values are "S", "M", "L", "XL", "2XL", "3XL").
+ //* @param runners array of runners like the one inside the /data/runners.js file.
+// * @param tShirtSize string (possible values are "S", "M", "L", "XL", "2XL", "3XL").
  * @returns an array containing only the runners that use the given `tShirtSize`.
  * The runners in the array appear in the same order they appear in the `runners` array.
 */
@@ -219,12 +219,12 @@ function getRunnersByTShirtSize(/* CODE HERE */) {
 /**
  * ### Challenge `tallyUpDonations`
  * 
- * @instructions
+// * @instructions
  * The donations need to be tallied up and reported for tax purposes.
  * Implement this function using reduce().
  * 
- * @param runners array of runners like the one inside the /data/runners.js file.
- * @returns a number which is the sum of the donations by all runners.
+// * @param runners array of runners like the one inside the /data/runners.js file.
+* @returns a number which is the sum of the donations by all runners.
 */
 function tallyUpDonations(/* CODE HERE */) {
   /* CODE HERE */
