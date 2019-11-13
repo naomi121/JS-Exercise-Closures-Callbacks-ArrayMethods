@@ -296,7 +296,17 @@ function counterMaker() {
  * etc
 */
 function counterMakerWithLimit(maxValue) {
-
+  let count = 0;
+  function counter() {
+    if(count <= maxValue){
+    return count++;
+    } else {
+      count = 0;
+      return count++;
+    }
+  }
+  return counter;
+}
 
 /////////////// END OF CHALLENGE ///////////////
 /////////////// END OF CHALLENGE ///////////////
